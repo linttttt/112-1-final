@@ -15,7 +15,9 @@ export default function FindTeamCardDescription({ description, vacancyNum }) {
     return (
         <Typography sx={{ width: "100%" }}>
             <Button onClick={handleOpen} sx={{ color: "#000000", width: "100%" }}>
-                <Typography color="#000000" sx={{ display: "-webkit-box", WebkitBoxOrient: "vertical", WebkitLineClamp: 3, overflow: "hidden" }}>
+                <Typography color="#000000"
+                    sx={{ display: "-webkit-box", WebkitBoxOrient: "vertical", WebkitLineClamp: 3, overflow: "hidden" }}
+                >
                     {description}
                 </Typography>
 
@@ -25,7 +27,9 @@ export default function FindTeamCardDescription({ description, vacancyNum }) {
                 open={open}
                 onClick={handleClose}
             >
-                <Alert onClose={() => { setOpen(false) }} icon={false} variant="outlined" sx={{ width: "50%", backgroundColor: "white", border: "3px solid #6c5044", color: "#6c5044" }}>
+                <Alert onClose={() => { setOpen(false) }} icon={false} variant="outlined"
+                    sx={{ width: "50%", backgroundColor: "white", border: "3px solid #6c5044", color: "#6c5044" }}
+                >
                     {description}
                 </Alert>
             </Backdrop>
