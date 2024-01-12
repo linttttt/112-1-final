@@ -1,6 +1,5 @@
-import * as React from 'react';
-import PropTypes from 'prop-types';
 import { AppBar, Slide, Toolbar, Typography, useScrollTrigger } from '@mui/material';
+import PropTypes from 'prop-types';
 
 function HideOnScroll(props) {
   const { children } = props

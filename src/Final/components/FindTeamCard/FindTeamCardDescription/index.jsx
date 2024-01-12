@@ -3,7 +3,7 @@ import { Alert, Backdrop, Button, Typography } from "@mui/material";
 
 export default function FindTeamCardDescription({ description, vacancyNum }) {
 
-    let backdropClose = vacancyNum > 0 ? "flex" : "none"
+    let backdropClose = vacancyNum ? "flex" : "none"
     const [open, setOpen] = useState(false);
     const handleClose = () => {
         setOpen(false);
@@ -20,7 +20,6 @@ export default function FindTeamCardDescription({ description, vacancyNum }) {
                 >
                     {description}
                 </Typography>
-
             </Button>
             <Backdrop
                 sx={{ display: backdropClose, color: '#fff', zIndex: (theme) => theme.zIndex.drawer + 1 }}

@@ -24,8 +24,8 @@ export default function FindTeamCard({ project }) {
 }
 export function FinalCard({ project }) {
 
-    let matched = project["Vacancy Number of Teammate"] > 0 ? "hidden" : "visible"
-    let opacityChange = project["Vacancy Number of Teammate"] > 0 ? 1 : 0.5
+    let matched = project["Vacancy Number of Teammate"] ? "hidden" : "visible"
+    let opacityChange = project["Vacancy Number of Teammate"] ? 1 : 0.5
 
     return (
         <Box sx={{ position: "relative", height: "400px", minWidth: "260px" }}>
